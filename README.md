@@ -8,8 +8,8 @@ It's that simple!
 
 ## Files
 
-Important files are `main.css` where you can add your own styling and  
-`page.js` where you can utilize [Angular.js](https://docs.angularjs.org/guide) and your own Javascript to  
+Important files are [main.css](main.css) where you can add your own styling and  
+[page.js](page.js) where you can utilize [Angular.js](https://docs.angularjs.org/guide) and your own Javascript to  
 incorporate some functionality that requires programming. If you would like  
 to learn Angular, I would suggest [this free course](https://www.codeschool.com/pages/angular-1-vs-2).
 
