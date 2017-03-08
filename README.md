@@ -6,6 +6,13 @@ between `<!-- YOUR CONTENT BEGIN -->` and `<!-- YOUR CONTENT END -->`.
 
 It's that simple!
 
+### Recommended Text Editors
+
+* [Atom](https://atom.io/)
+* [Sublime](https://www.sublimetext.com/)
+* [Notepad++](https://notepad-plus-plus.org/)
+* [Visual Studio Code](https://code.visualstudio.com/)
+
 ## Files
 
 Important files are [main.css](main.css) where you can add your own styling and  
