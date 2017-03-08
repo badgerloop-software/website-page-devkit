@@ -1,0 +1,52 @@
+hr {
+    height: 1em;
+    margin: 0em;
+    border-width: 0px;
+}
+
+html {
+    font-family: 'Montserrat';
+}
+
+.main_container {
+    height: 100vh;
+}
+
+.view_container {
+    min-height: 100vh;
+}
+
+.headerImg {
+	width: 5em;
+	margin: auto;
+	margin-top: 0.75em;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    height: 2em;
+    margin: 1em;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .social img {
+      margin: 0em;
+      padding: 0em;
+  }
+
+  .social-button {
+      min-width: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .headerImg {
+      width: 4em;
+  }
+}
