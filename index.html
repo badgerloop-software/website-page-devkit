@@ -1,104 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Badgerloop</title>
-        <meta charset="UTF-8">
-		<meta name="description" content="Hyperloop Pod Competition Team Website">
-		<meta name="author" content="Badgerloop Software Team">
-		<meta name="keywords" content="BadgerLoop, Wisconsin, Madison, Badgers, Hyperloop, SpaceX, Tesla, Elon Musk, Train"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <title>Badgerloop</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Hyperloop Pod Competition Team Website">
+      <meta name="author" content="Badgerloop Software Team">
+      <meta name="keywords" content="BadgerLoop, Wisconsin, Madison, Badgers, Hyperloop, SpaceX, Tesla, Elon Musk, Train"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- favicons -->
+      <link rel="favicon" href="im/favicons/32x32.png">
+      <link rel="shortcut icon" href="im/favicons/32x32.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="im/favicons/72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="im/favicons/114x114.png">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet" />
+      <!-- CSS Dependencies -->
+      <link href="angular/angular-material.min.css" rel="stylesheet" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="main.css" />
+   </head>
 
-		<!-- favicons -->
-		<link rel="favicon" href="im/favicons/32x32.png">
-		<link rel="shortcut icon" href="im/favicons/32x32.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="im/favicons/72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="im/favicons/114x114.png">
+   <!-- CSS Styles -->
+   <style type="text/css">
+      .md-tabs {
+        width: 600px;
+      }
+    input[type=text] {
+        width: 50%;
+        padding: 10px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        }
 
-		<!-- fonts -->
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet" />
+    input[type=submit] {
+        padding:5px 15px; 
+        background:#ccc; 
+        border:0 none;
+        cursor:pointer;
+        border-radius: 5px; 
+        }
+    </style>
 
-		<!-- CSS Dependencies -->
-		<link href="angular/angular-material.min.css" rel="stylesheet" />
-		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="main.css" />
+   <!-- Javascript Dependencies -->
+   <script src="angular/angular.min.js"></script>
+   <script src="angular/angular-aria.min.js"></script>
+   <script src="angular/angular-animate.min.js"></script>
+   <script src="angular/angular-material.min.js"></script>
 
-    </head>
+   <!-- Custom Elements -->
+   <script src="js/main.js"></script>
+   <script src="js/navbar.js"></script>
+   <script src="js/footer.js"></script>
+   <script src="js/hr.js"></script>
 
-    <!-- Javascript Dependencies -->
-    <script src="angular/angular.min.js"></script>
-    <script src="angular/angular-aria.min.js"></script>
-    <script src="angular/angular-animate.min.js"></script>
-    <script src="angular/angular-material.min.js"></script>
+   <!-- Page Controller -->
+   <script src="page.js"></script>
+   <body ng-app="badgerloop-site">
+      <div layout="column" class="main_container" ng-cloak>
+         <badgerloop-navbar></badgerloop-navbar>
+         <md-content flex>
+         <badgerloop-hr></badgerloop-hr>
+         <br>
 
-    <!-- Custom Elements -->
-    <script src="js/main.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/hr.js"></script>
-    
-    <!-- Page Controller -->
-    <script src="page.js"></script>
-    
-    <body ng-app="badgerloop-site">
-        <div layout="column" class="main_container" ng-cloak>
-	    <badgerloop-navbar></badgerloop-navbar>    
-	    <md-content flex><badgerloop-hr></badgerloop-hr><br>
+         <!-- YOUR CONTENT BEGIN -->
+         <div class="view_container" ng-controller="pageController">
+            <div class="contactTabs view_container">
+               <md-tabs>
+                  <md-tab label="Student">
+                     <md-content class="md-padding">
+                     <h1 class="md-display-2">Student Contact</h1>
+                     <p>Are you a UW student and want to know more about Badgerloop?<br>
+                        Fill out the form below and we'll contact you!
+                     <form>
+                        Full Name:<br>
+                        <input type="text" name="firstname"><br>
+                        Wisc Email:<br>
+                        <input type="text" name="wiscmail"><br>
+                        Major:<br>
+                        <input type="text" name="major"><br>
+                        Year:<br>
+                        <input type="text" name="year"><br>
+                        Anything specific you want to know?<br>
+                        <textarea rows="4" cols="50">
+                        </textarea><br>
+                        <input type="submit" value="Submit"/>
+                     </form>
+                     </p>
+                  </md-tab>
+                  <md-tab label="Sponsor">
+                     <md-content class="md-padding">
+                     <h1 class="md-display-2">Sponsor Contact</h1>
+                     <p>Integer</p>
+                  </md-tab>
+                  <md-tab label="Other">
+                     <md-content class="md-padding">
+                        <h1 class="md-display-2">Other Contact</h1>
+                        <p>Want to know more?<br> 
+                           Fill out the form below and we'll contact you!
+                        <form>
+                           Full Name:<br>
+                           <input type="text" name="name"/><br>
+                           Email:<br>
+                           <input type="text" name="email"/><br>
+                           Anything specific you want to know?<br>
+                           <textarea rows="4" cols="50">
+                           </textarea><br>
+                           <input type="submit" value="Submit"/>
+                        </form>
+                        </p>
+                  </md-tab>
+               </md-tabs>
+            </div>
+         </div>
+         <!-- YOUR CONTENT END -->
 
-<!-- YOUR CONTENT BEGIN -->
-<div class="view_container" ng-controller="pageController">
-    <div class="contactTabs view_container">
-    <md-tabs>
-      <md-tab label="Student">
-        <md-content class="md-padding">
-              <h1 class="md-display-2">Student Contact</h1>
-              <p>Are you a UW student and want to know more about Badgerloop?<br>
-                 Fill out the form below and we'll contact you!<form>
-              Full Name:<br>
-              <input type="text" name="firstname"><br>
-              Wisc Email:<br>
-              <input type="text" name="wiscmail"><br>
-              Major:<br>
-              <input type="text" name="major"><br>
-              Year:<br>
-              <input type="text" name="year"><br>
-              Anything specific you want to know?<br>
-              <textarea rows="4" cols="50">
-              </textarea><br>
-              <input type="submit" value="Submit"/>
-              </form></p>
-      </md-tab>
-      
-      <md-tab label="Sponsor">
-        <md-content class="md-padding">
-              <h1 class="md-display-2">Sponsor Contact</h1>
-              <p>Integer</p>
-      </md-tab>
-      
-      <md-tab label="Other">
-        <md-content class="md-padding">
-              <h1 class="md-display-2">Other Contact</h1>
-              <p>Want to know more?<br> 
-              Fill out the form below and we'll contact you!
-              <form>
-                Full Name:<br>
-                <input type="text" name="name"/><br>
-                Email:<br>
-                <input type="text" name="email"/><br>
-                Anything specific you want to know?<br>
-                <textarea rows="4" cols="50">
-                </textarea><br>
-                <input type="submit" value="Submit"/>
-              </form></p>
-      </md-tab> 
-    </md-tabs>
-    </div>
-</div>
-<!-- YOUR CONTENT END -->
-
-            <br><badgerloop-hr></badgerloop-hr></md-content>
-	    <badgerloop-footer></badgerloop-footer>
-	</div>
-    </body>
+         <br><badgerloop-hr></badgerloop-hr></md-content>
+         <badgerloop-footer></badgerloop-footer>
+      </div>
+   </body>
 </html>
-
