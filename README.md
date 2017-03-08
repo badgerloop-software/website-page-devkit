@@ -1,7 +1,7 @@
 # Badgerloop Website Development
 
 To get started, simply find the button that says *Clone or download*  
-and click *Download ZIP*. Unzip the folder and begin editing `index.html`  
+and click *Download ZIP*. Unzip the folder and begin editing [index.html](index.html)  
 between `<!-- YOUR CONTENT BEGIN -->` and `<!-- YOUR CONTENT END -->`.  
 
 It's that simple!
