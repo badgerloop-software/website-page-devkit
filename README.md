@@ -1,10 +1,47 @@
 # Badgerloop Website Development
 
-To get started, simply find the button that says *Clone or download*  
+### Non-Git (Just want to learn / play around)
+
+Find the button that says *Clone or download*  
 and click *Download ZIP*. Unzip the folder and begin editing [index.html](index.html)  
 between `<!-- YOUR CONTENT BEGIN -->` and `<!-- YOUR CONTENT END -->`.  
 
 It's that simple!
+
+### Git (Want to know how to publish my work to GitHub)
+
+**WARNING: You will need a GitHub account and to be a part of the  
+badgerloop-software GitHub organization first, contact Vaughn Kottler  
+for help**
+
+Make a new folder somewhere (i.e. called `website-template`), open a terminal or **Git Bash**  
+window here and run the following commands:  
+```
+git init
+git remote add origin https://github.com/badgerloop-software/website-page-devkit.git
+git fetch
+git pull origin master
+```  
+Depending on which page you're working on, you'll need to checkout a different branch from here.  
+Examples:  
+```
+git checkout main
+git checkout contact
+git checkout pod
+git checkout media
+...
+```
+To see all branches, view the [branches](https://github.com/badgerloop-software/website-page-devkit/branches) tab.  
+Once you have the right branch checked out (see what branch you're  
+currently on using `git branch`) you can start making changes!
+When you're at a logical stopping point and would like to submit  
+your changes run the following commands:
+```
+git add -A
+git commit -m "describe_changes_in_your_words"
+git push origin your_current_branch
+```
+Once this command goes through, you should be able to see your updates on GitHub!
 
 ### Recommended Text Editors
 
