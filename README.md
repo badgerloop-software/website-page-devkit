@@ -22,6 +22,11 @@ available to you! Definitely check out the **DEMOS** section.
 
 You can add your own CSS styling to [main.css](main.css), or do it within [index.html](index.html).
 
+## What should my page look like?
+
+We came up with a lot of great ideas already. The notes from  
+the meeting can be viewed in [site.jpg](site.jpg) and [notes.jpg](notes.jpg)!
+
 ## Help
 
 If you have any further questions contact Vaughn Kottler on the Badgerloop Slack or via email at [vkottler@wisc.edu](vkottler@wisc.edu).
