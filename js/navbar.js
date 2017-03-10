@@ -9,7 +9,7 @@ return {
 '\
 <md-toolbar md-whiteframe="6" style="padding: 0.25em">\
     <div class="md-toolbar-tools" layout-align="space-between center">\
-        <md-button class="md-raised" ng-click="changeView(homeButton)" ng-disabled="homeButton.enabled" aria-label="home">\
+        <md-button class="md-raised" ng-click="changeView(homeButton)" ng-disabled="true" aria-label="home">\
           <img class="headerImg" src="im/background/BadgerLoopLogoV5.png">\
           <md-tooltip md-direction="bottom">HOME</md-tooltip>\
         </md-button>\
