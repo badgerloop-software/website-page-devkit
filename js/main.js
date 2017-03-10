@@ -8,7 +8,8 @@ angular.module('controllers', [])
         { text: "contact",      enabled: false },
         { text: "sponsorship",  enabled: false },
         { text: "media",        enabled: false },
-        { text: "team",         enabled: false }
+        { text: "team",         enabled: false },
+        { text: "page",         enabled: true  }
     ];
     $scope.homeButton = { text: "home", enabled: false };
     $scope.curr_button = $scope.buttons[0];
