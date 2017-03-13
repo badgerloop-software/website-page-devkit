@@ -8,6 +8,26 @@ html {
     font-family: 'Montserrat';
 }
 
+.text{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgNorm2 {
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -210px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
 .main_container {
     height: 100vh;
 }
